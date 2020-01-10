@@ -7,9 +7,9 @@
 Name:           libbluray
 Version:        0.2.3
 %if %{snapshot}
-Release:        0.10.%{tarball_date}git%{git_short}%{?dist}
+Release:        0.12.%{tarball_date}git%{git_short}%{?dist}
 %else
-Release:        3%{?dist}
+Release:        5%{?dist}
 %endif
 Summary:        Library to access Blu-Ray disks for video playback 
 Group:          System Environment/Libraries
@@ -124,6 +124,12 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.2.3-5
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.2.3-4
+- Mass rebuild 2013-12-27
+
 * Fri May 03 2013 Bastien Nocera <bnocera@redhat.com> 0.2.3-3
 - Remove unused java sub-package
 
